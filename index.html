@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Irregular verbs</h1>
+        <div id="verb-display">
+            <span id="display-verb"></span>
+        </div>
+        <div id="inputs">
+            <input type="text" id="input1" placeholder="Forma 1">
+            <input type="text" id="input2" placeholder="Forma 2">
+            <input type="text" id="input3" placeholder="Traducción al español">
+        </div>
+        <button id="submit-btn">Send</button>
+        <div id="score-time">
+            <p>Score: <span id="score">0</span></p>
+            <p>Time: <span id="time">20</span>s</p>
+        </div>
+    </div>
+    <div id="modal" class="hidden">
+        <div id="modal-content">
+            <span id="modal-message"></span>
+            <button id="modal-close-btn">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

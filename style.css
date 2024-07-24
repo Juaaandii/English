@@ -1,0 +1,144 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+    margin: 0;
+    color: #333;
+}
+
+#game-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+    position: relative;
+}
+
+h1 {
+    font-size: 2em;
+    color: #00796b;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+#verb-display {
+    font-size: 1.5em;
+    color: #00796b;
+    margin-bottom: 20px;
+    background-color: #e0f2f1;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#inputs input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    font-size: 1em;
+    border: 2px solid #e0f2f1;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#inputs input:focus {
+    border-color: #00796b;
+    outline: none;
+}
+
+#submit-btn {
+    padding: 12px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #00796b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#submit-btn:hover {
+    background-color: #004d40;
+}
+
+#score-time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+#score-time p {
+    margin: 5px 0;
+}
+
+#time {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00796b;
+    transition: color 0.5s ease;
+}
+
+.time-warning {
+    color: #d32f2f !important;
+}
+
+/* Estilos para el modal */
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#modal.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+#modal-content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    width: 80%;
+}
+
+#modal-message {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.5; /* Mejora el espaciado entre líneas */
+}
+
+#modal-close-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #00796b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#modal-close-btn:hover {
+    background-color: #004d40;
+}
